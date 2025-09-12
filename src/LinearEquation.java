@@ -150,8 +150,6 @@ public class LinearEquation {
         speed = distance / time;
         System.out.println("Average speed = " + speed);
 
-*/
-
 //1. Amir Late for School
         double startTime;
         double endTime;
@@ -278,6 +276,22 @@ public class LinearEquation {
         int concertsToSecs = (concertStartsInSecs % 3600) % 60;
         System.out.println("Time is " + concertToHours + ":" + concertToMinutes + ":" + concertsToSecs);
 
+*/
+
+        double cylinderRadius;
+        double cylinderLength;
+        double cylinderVolume;
+        double cylinderArea;
+        double PI = 3.1415;
+        Scanner cylinder = new Scanner(System.in);
+        System.out.print("enter a degree cylinderRadius: ");
+        cylinderRadius = cylinder.nextDouble();
+        System.out.print("enter a degree cylinderLength: ");
+        cylinderLength = cylinder.nextDouble();
+
+        cylinderArea = cylinderRadius * cylinderRadius * PI;
+        cylinderVolume = cylinderArea * cylinderLength;
+        System.out.print("Cylinder Area =" + cylinderArea + " Cylinder Volume =" + cylinderVolume);
 
 
     }
