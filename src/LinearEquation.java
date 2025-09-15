@@ -288,7 +288,6 @@ public class LinearEquation {
         cylinderRadius = cylinder.nextDouble();
         System.out.print("enter a degree cylinderLength: ");
         cylinderLength = cylinder.nextDouble();
-
         cylinderArea = cylinderRadius * cylinderRadius * PI;
         cylinderVolume = cylinderArea * cylinderLength;
         System.out.print("Cylinder Area =" + cylinderArea + " Cylinder Volume =" + cylinderVolume);
