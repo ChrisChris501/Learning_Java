@@ -276,7 +276,6 @@ public class LinearEquation {
         int concertsToSecs = (concertStartsInSecs % 3600) % 60;
         System.out.println("Time is " + concertToHours + ":" + concertToMinutes + ":" + concertsToSecs);
 
-*/
 
         double cylinderRadius;
         double cylinderLength;
@@ -292,7 +291,26 @@ public class LinearEquation {
         cylinderVolume = cylinderArea * cylinderLength;
         System.out.print("Cylinder Area =" + cylinderArea + " Cylinder Volume =" + cylinderVolume);
 
+        double b = 2;
+       int i = (int)b;
 
+
+        //java.util.Random
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number:");
+            int y = input.nextInt();
+            int x;
+            if ( y >= 0) {
+              System.out.println(x = 1);
+            };
+*/
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a score:");
+        double pay = input.nextInt();
+        double percentageIncrement = 0.03 * pay;
+        if ( pay >= 90) {
+            System.out.println(percentageIncrement+ pay);
+        }
     }
 }
 
