@@ -303,13 +303,28 @@ public class LinearEquation {
             if ( y >= 0) {
               System.out.println(x = 1);
             };
-*/
+
+    //If statement
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a score:");
-        double pay = input.nextInt();
+        double pay = input.nextDouble();
         double percentageIncrement = 0.03 * pay;
         if ( pay >= 90) {
             System.out.println(percentageIncrement+ pay);
+        }
+
+        */
+
+        //if/else statement
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a score:");
+        double score = input.nextDouble();
+        double scoreThreePercentageIncrement = 0.03 * score;
+        double scoreOnePercentageIncrement = 0.01 * score;
+        if ( score >= 90) {
+            System.out.println(scoreThreePercentageIncrement+ score);
+        } else {
+            System.out.println(scoreOnePercentageIncrement + score);
         }
     }
 }
