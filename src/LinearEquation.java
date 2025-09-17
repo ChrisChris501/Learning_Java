@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class LinearEquation {
     public static void main(String[] args) {
@@ -48,15 +49,16 @@ public class LinearEquation {
         System.out.println("The area is: " + area + "cm^2");
         equation.close();
 
-        double fahrenheit = 0;
-        double celsius = 0;
+        double Fahrenheit = 0;
+        double Celsius = 0;
         Scanner userInput =  new Scanner (System.in);
 
-        System.out.print("enter a degree fahrenheit: ");
-        fahrenheit = userInput.nextDouble();
+        System.out.print("enter a degree Fahrenheit: ");
+        Fahrenheit = userInput.nextDouble();
 
         celsius = (5.0 / 9) * (fahrenheit - 32);
-        System.out.print("fahrenheit " + fahrenheit + " is " + celsius + " in celsius");
+        System.out.print("Fahrenheit " + Fahrenheit + " is " + Celsius + " in Celsius");
+
         double a = 2;
         double b = 2;
         double c = 1;
@@ -65,7 +67,6 @@ public class LinearEquation {
         double f = 2;
         double t = 2;
         double g;
-
         f = 4 / (3 * ( r + 34 )) - 9 * (a + b*(c)) + ( 3 + d * (2 + a)) / a + b*(d);
         g = 5.5 * Math.pow(r + 2.5, 2.5 + t);
         System.out.print("g is equals " + g);
@@ -146,7 +147,8 @@ public class LinearEquation {
         //Speed to kilometers
          distance = speedInMiles * 1.6;
 
-        //speed
+        // Calculating speed
+
         speed = distance / time;
         System.out.println("Average speed = " + speed);
 
@@ -200,7 +202,7 @@ public class LinearEquation {
 
         //Convert coffee temp from degree Celsius to Fahrenheit
         pouredCoffeeTemp = (pouredCoffeeTemp * 9/5) + 32;
-        System.out.println("Converted coffee Temp is " + pouredCoffeeTemp + "degree fahrenheit");
+        System.out.println("Converted coffee Temp is " + pouredCoffeeTemp + "degree Fahrenheit");
         //Check if Coffee Temp is hotter than the recommended recipe
         if (pouredCoffeeTemp > recommendedTemp) {
             System.out.println("Coffee is hotter than the recommended temperature");
@@ -276,26 +278,10 @@ public class LinearEquation {
         int concertsToSecs = (concertStartsInSecs % 3600) % 60;
         System.out.println("Time is " + concertToHours + ":" + concertToMinutes + ":" + concertsToSecs);
 
-
-        double cylinderRadius;
-        double cylinderLength;
-        double cylinderVolume;
-        double cylinderArea;
-        double PI = 3.1415;
-        Scanner cylinder = new Scanner(System.in);
-        System.out.print("enter a degree cylinderRadius: ");
-        cylinderRadius = cylinder.nextDouble();
-        System.out.print("enter a degree cylinderLength: ");
-        cylinderLength = cylinder.nextDouble();
-        cylinderArea = cylinderRadius * cylinderRadius * PI;
-        cylinderVolume = cylinderArea * cylinderLength;
-        System.out.print("Cylinder Area =" + cylinderArea + " Cylinder Volume =" + cylinderVolume);
-
         double b = 2;
        int i = (int)b;
 
 
-        //java.util.Random
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number:");
             int y = input.nextInt();
@@ -313,8 +299,6 @@ public class LinearEquation {
             System.out.println(percentageIncrement+ pay);
         }
 
-        */
-
         //if/else statement
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a score:");
@@ -326,6 +310,33 @@ public class LinearEquation {
         } else {
             System.out.println(scoreOnePercentageIncrement + score);
         }
+
+        double cylinderRadius;
+        double cylinderLength;
+        double cylinderVolume;
+        double cylinderArea;
+        final double PI = 3.1415;
+        Scanner cylinder = new Scanner(System.in);
+        System.out.print("enter the cylinderRadius: ");
+        cylinderRadius = cylinder.nextDouble();
+        System.out.print("enter the cylinderLength: ");
+        cylinderLength = cylinder.nextDouble();
+        cylinderArea = cylinderRadius * cylinderRadius * PI;
+        cylinderVolume = cylinderArea * cylinderLength;
+        System.out.print("Cylinder Area =" + cylinderArea + " and Cylinder Volume =" + cylinderVolume);
+
+    //java.util.Random
+    Random random = new Random();
+    int randomNumber = random.nextInt(1000); //Generate random number up to 1000
+        System.out.println("Random number is =" + randomNumber);
+            int extractionOfHundreds = randomNumber /100;
+            int extractionOfTens = (randomNumber / 10) % 10;
+            int extractionOfOnes = randomNumber % 10;
+            int sumOfRandomNumberDigits = extractionOfHundreds + extractionOfTens + extractionOfOnes;
+        System.out.println(sumOfRandomNumberDigits);
+
+
+        */
     }
 }
 
