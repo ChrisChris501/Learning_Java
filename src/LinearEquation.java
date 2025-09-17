@@ -324,7 +324,6 @@ public class LinearEquation {
         cylinderArea = cylinderRadius * cylinderRadius * PI;
         cylinderVolume = cylinderArea * cylinderLength;
         System.out.print("Cylinder Area =" + cylinderArea + " and Cylinder Volume =" + cylinderVolume);
-
     //java.util.Random
     Random random = new Random();
     int randomNumber = random.nextInt(1000); //Generate random number up to 1000
@@ -335,8 +334,52 @@ public class LinearEquation {
             int sumOfRandomNumberDigits = extractionOfHundreds + extractionOfTens + extractionOfOnes;
         System.out.println(sumOfRandomNumberDigits);
 
+        Scanner count = new Scanner(System.in);
+        System.out.print("enter any number ");
+        int countNumber = count.nextInt();
+        boolean newLine =  countNumber % 10 == 0;
+        System.out.println(newLine);
 
+        Scanner count = new Scanner(System.in);
+        System.out.print("enter any number ");
+        int countNumber = count.nextInt();
+        if (countNumber % 2 == 0)
+            System.out.println
+                    (countNumber + " is even");
+        else if (countNumber % 5 == 0)
+            System.out.println
+                    (countNumber + " is multiple of 5");
         */
+
+        double underWeight = 18.5;
+        double normalWeight = 25.0;
+        double overWeight = 30.0;
+        final double onePoundToKilogram = 0.45359237;
+        final double oneInchToMeter = 0.0254;
+        double bodyWeight;
+        double BMI;
+        Scanner weight = new Scanner(System.in);
+        System.out.print("enter your weight in pounds: ");
+         bodyWeight = weight.nextDouble();
+        Scanner height = new Scanner(System.in);
+        System.out.print("enter your height in inches: ");
+        double bodyHeight = height.nextDouble();
+        double weightInPoundsToKilogram = bodyWeight * onePoundToKilogram;
+        double  heightInInchesToMeters = bodyHeight * oneInchToMeter;
+        BMI = weightInPoundsToKilogram / (heightInInchesToMeters * heightInInchesToMeters);
+        System.out.println("BMI is " + BMI);
+        if ( BMI < underWeight){
+            System.out.print("You are underweight, work on it");
+        } else if ( underWeight <= BMI && BMI < normalWeight)
+         {
+             System.out.print("You weight is normal, great!");
+         } else if (normalWeight <= BMI &&  BMI < overWeight)
+         {
+             System.out.print("You are overweight, work on it");
+         } else if (overWeight <= BMI)
+        {
+            System.out.print("You are obese!");
+        }
     }
 }
 
