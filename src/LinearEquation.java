@@ -316,23 +316,26 @@ public class LinearEquation {
         double cylinderVolume;
         double cylinderArea;
         final double PI = 3.1415;
-        Scanner cylinder = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("enter the cylinderRadius: ");
-        cylinderRadius = cylinder.nextDouble();
+        cylinderRadius = input.nextDouble();
         System.out.print("enter the cylinderLength: ");
-        cylinderLength = cylinder.nextDouble();
+        cylinderLength = input.nextDouble();
         cylinderArea = cylinderRadius * cylinderRadius * PI;
         cylinderVolume = cylinderArea * cylinderLength;
-        System.out.print("Cylinder Area =" + cylinderArea + " and Cylinder Volume =" + cylinderVolume);
-    //java.util.Random
-    Random random = new Random();
-    int randomNumber = random.nextInt(1000); //Generate random number up to 1000
+        System.out.println("Cylinder Area =" + cylinderArea + " and Cylinder Volume =" + cylinderVolume);
+
+
+        //java.util.Random
+        Random random = new Random();
+        int randomNumber = random.nextInt(1000); //Generate random number up to 1000
         System.out.println("Random number is =" + randomNumber);
-            int extractionOfHundreds = randomNumber /100;
-            int extractionOfTens = (randomNumber / 10) % 10;
-            int extractionOfOnes = randomNumber % 10;
-            int sumOfRandomNumberDigits = extractionOfHundreds + extractionOfTens + extractionOfOnes;
-        System.out.println(sumOfRandomNumberDigits);
+        int extractionOfHundreds = randomNumber /100;
+        int extractionOfTens = (randomNumber / 10) % 10;
+        int extractionOfOnes = randomNumber % 10;
+        int sumOfRandomNumberDigits = extractionOfHundreds + extractionOfTens + extractionOfOnes;
+        System.out.println("The sum of the digits in the random number is: " + sumOfRandomNumberDigits);
+
 
         Scanner count = new Scanner(System.in);
         System.out.print("enter any number ");
@@ -349,7 +352,6 @@ public class LinearEquation {
         else if (countNumber % 5 == 0)
             System.out.println
                     (countNumber + " is multiple of 5");
-        */
 
         double underWeight = 18.5;
         double normalWeight = 25.0;
@@ -380,6 +382,9 @@ public class LinearEquation {
         {
             System.out.print("You are obese!");
         }
+
+        */
+
     }
 }
 
