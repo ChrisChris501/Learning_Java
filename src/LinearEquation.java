@@ -410,8 +410,6 @@ public class LinearEquation {
             System.out.println("false");
         }
 
-        */
-
         Scanner newInput = new Scanner(System.in);
         System.out.print("Enter a year: ");
         int year = newInput.nextInt();
@@ -419,6 +417,54 @@ public class LinearEquation {
         boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
         // Display the result
         System.out.println(year + " is a leap year? " + isLeapYear);
+
+        Scanner newInput = new Scanner(System.in);
+        System.out.print("Enter a year: ");
+        int year = newInput.nextInt();
+        //Using switch statement
+        switch (year % 12) {
+            case 0: System.out.println("monkey");
+                break;
+            case 1: System.out.println("rooster");
+                break;
+            case 2: System.out.println("dog");
+                break;
+            case 3: System.out.println("pig");
+                break;
+            case 4: System.out.println("rat");
+                break;
+            case 5: System.out.println("ox");
+                break;
+            case 6: System.out.println("tiger");
+                break;
+            case 7: System.out.println("rabbit");
+                break;
+            case 8: System.out.println("dragon");
+                break;
+            case 9: System.out.println("snake");
+                break;
+            case 10: System.out.println("horse");
+                break;
+            case 11: System.out.println("sheep");
+                break;
+        }
+
+        int x = 1;
+        int a = 7;
+        switch (a){
+            case 1: x += 5;
+            break;
+            case 2: x += 10;
+            break;
+            case 3: x += 16;
+            break;
+            case 4: x += 34;
+        }
+        System.out.println("x = " + x);
+
+        */
+
     }
+
 }
 
