@@ -515,25 +515,25 @@ public class LinearEquation {
 
         int result = (Math.random() < 0.9) ? 1 : -1;
         System.out.println(result);
-
         */
+
         Random random = new Random();
         int firstRandomNumber = random.nextInt(10);
         int secondRandomNumber = random.nextInt(10);
-        int ans = firstRandomNumber + secondRandomNumber;
-        int userAnswer;
+        int thirdRandomNumber = random.nextInt(10);
+        int ans = firstRandomNumber + secondRandomNumber + thirdRandomNumber;
+        int revisedUserAnswer;
 
-
+            //Revised code
         Scanner input = new Scanner(System.in);
-        System.out.print("What is the addition of? " + firstRandomNumber + " and " + secondRandomNumber);
-        userAnswer = input.nextInt();
+        System.out.println("What is the addition of? " + firstRandomNumber + " and " + secondRandomNumber + " and " + thirdRandomNumber );
+        revisedUserAnswer = input.nextInt();
 
-        if (userAnswer == ans) {
-            System.out.print("you are correct!");
+        if ( revisedUserAnswer == ans) {
+            System.out.println("you are right!!");
         } else {
-            System.out.print("you are wrong!");
+            System.out.println("you are wrong!");
         }
-
 
 
         }
