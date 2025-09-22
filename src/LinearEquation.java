@@ -462,9 +462,80 @@ public class LinearEquation {
         }
         System.out.println("x = " + x);
 
-        */
+        int days = 2;
+        switch (days) {
+            case 0: System.out.println("Sunday");
+                break;
+            case 1: System.out.println("Monday");
+            break;
+            case 2: System.out.println("Tuesday");
+            break;
+            case 3: System.out.println("Wednesday");
+                break;
+            case 4: System.out.println("Thursday");
+                break;
+            case 5: System.out.println("Friday");
+            break;
+            case 6: System.out.println("Saturday");
+                break;
 
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        double x = input.nextDouble();
+        double y = input.nextDouble();
+        double z = input.nextDouble();
+        System.out.println((x < y && y < z) ? "sorted" : "not sorted");
+
+        int age = 4;
+        int ticketPrice;
+        ticketPrice = (age>= 16) ? 20 : 10 ;
+        System.out.println(ticketPrice);
+
+        double score;
+        double scale = 10;
+        double x = 2;
+        if(x >= 16)
+        {
+            score = scale * 3;
+
+        } else
+        {
+            score = scale * 4;
+        }
+        System.out.println(score);
+
+        double tax;
+        double income = 20000;
+        if (income > 100000)
+        {
+            tax = income * 0.2;
+        } else {
+            tax = income * 0.17;
+        }
+        System.out.println(tax);
+
+        int result = (Math.random() < 0.9) ? 1 : -1;
+        System.out.println(result);
+
+        */
+        Random random = new Random();
+        int firstRandomNumber = random.nextInt(10);
+        int secondRandomNumber = random.nextInt(10);
+        int ans = firstRandomNumber + secondRandomNumber;
+        int userAnswer;
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("What is the addition of? " + firstRandomNumber + " and " + secondRandomNumber);
+        userAnswer = input.nextInt();
+
+        if (userAnswer == ans) {
+            System.out.print("you are correct!");
+        } else {
+            System.out.print("you are wrong!");
+        }
+
+        }
     }
 
-}
+
 
