@@ -534,6 +534,8 @@ public class LinearEquation {
             System.out.print("you are wrong!");
         }
 
+
+
         }
     }
 
