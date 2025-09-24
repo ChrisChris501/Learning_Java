@@ -538,10 +538,10 @@ public class LinearEquation {
 
         //BMI
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your body weight in pounds:");
-        double bodyWeight = input.nextInt();
-        System.out.println("Enter height in inches?");
-        double heightInches = input.nextInt();
+        System.out.println("Enter your body weight in kilogram:");
+        double bodyWeight = input.nextDouble();
+        System.out.println("Enter height in meters?");
+        double heightInches = input.nextDouble();
         double  BMI = bodyWeight / (heightInches * heightInches);
         System.out.println("Your BMI is:" + BMI);
     }
