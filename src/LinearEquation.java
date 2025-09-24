@@ -515,7 +515,6 @@ public class LinearEquation {
 
         int result = (Math.random() < 0.9) ? 1 : -1;
         System.out.println(result);
-        */
 
         Random random = new Random();
         int firstRandomNumber = random.nextInt(10);
@@ -535,8 +534,17 @@ public class LinearEquation {
             System.out.println("you are wrong!");
         }
 
+        */
 
-        }
+        //BMI
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your body weight in pounds:");
+        double bodyWeight = input.nextInt();
+        System.out.println("Enter height in inches?");
+        double heightInches = input.nextInt();
+        double  BMI = bodyWeight / (heightInches * heightInches);
+        System.out.println("Your BMI is:" + BMI);
+    }
     }
 
 
