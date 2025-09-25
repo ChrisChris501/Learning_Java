@@ -534,8 +534,6 @@ public class LinearEquation {
             System.out.println("you are wrong!");
         }
 
-        */
-
         //BMI
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your body weight in kilogram:");
@@ -544,6 +542,35 @@ public class LinearEquation {
         double heightInches = input.nextDouble();
         double  BMI = bodyWeight / (heightInches * heightInches);
         System.out.println("Your BMI is:" + BMI);
+
+       int maxNumber = Math.min(10, 3);
+        System.out.println(maxNumber);
+
+        double roundingNumber = Math.rint(3.5);
+        System.out.println(roundingNumber);
+
+       int number = 50 + (int)(Math.random() * 50);
+        System.out.println(number);
+
+        */
+        // Math Problems
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter coordinate x1");
+        double x1 = input.nextDouble();
+        System.out.println("Enter coordinate x1");
+        double x2 = input.nextDouble();
+        System.out.println("Enter coordinate x1");
+        double x3 = input.nextDouble();
+        System.out.println("Enter coordinate x1");
+        double y1 = input.nextDouble();
+        System.out.println("Enter coordinate x1");
+        double y2 = input.nextDouble();
+        System.out.println("Enter coordinate x1");
+        double y3 = input.nextDouble();
+
+        double coordinateA = Math.sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
+        double coordinateB =  Math.sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
+        double coordinateC = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
     }
     }
 
