@@ -572,8 +572,6 @@ public class LinearEquation {
         double coordinateB =  Math.sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
         double coordinateC = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
 
-        */
-
         java.util.Scanner input = new java.util.Scanner(System.in);
         double x = input.nextDouble();
         double y = input.nextDouble();
@@ -581,4 +579,38 @@ public class LinearEquation {
         System.out.println((x < y && y < z) ? "sorted" : "not sorted");
 
     }
+    }
+
+        */
+
+// quadratic Equation solutions using programming
+        double a;
+        double b;
+        double c;
+        double r1;
+        double r2;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a");
+        a = input.nextDouble();
+        System.out.println("Enter b");
+        b = input.nextDouble();
+        System.out.println("Enter c");
+        c = input.nextDouble();
+
+         double discriminant = b * b - 4 * a * c;
+
+                if( discriminant > 0) {
+                    r1 = (-b  + Math.sqrt(discriminant)) / (2 * a);
+                    r2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+            System.out.println("The equation has two roots " + r1 + " and " + r2);
+
+        } else if (discriminant == 0) {
+                    r1 = -b  / (2 * a);
+            System.out.println("The equation has one root: " + r1);
+
+        } else {
+            System.out.println("The equation has no real root");
+                }
+        }
     }
