@@ -581,7 +581,6 @@ public class LinearEquation {
     }
     }
 
-        */
 
 // quadratic Equation solutions using programming
         double a;
@@ -612,5 +611,64 @@ public class LinearEquation {
         } else {
             System.out.println("The equation has no real root");
                 }
-        }
+
+
+        // Chapter 3 Code Challenge
+        double number;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        number = input.nextDouble();
+
+       if (number % 2 == 0)
+           System.out.println(number + "is even.");
+        System.out.println(number + "is odd.");
+
+       if (number % 2 == 0)
+            System.out.println(number + " is even.");
+        else
+            System.out.println(number + " is odd.");
+
+        double score;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a score:");
+        score = input.nextDouble();
+        if (score >= 60.0)
+            System.out.println("D");
+        else if (score >= 70.0)
+            System.out.println("C");
+        else if (score >= 80.0)
+            System.out.println("B");
+        else if (score >= 90.0)
+            System.out.println("A");
+        else
+            System.out.println("F");
+
+        */
+
+
+
+                // Write an if statement that increases pay by
+                // 3% if score is greater than 90,
+                // other-wise increases pay by 1%.
+
+         /*   double pay;
+            double score;
+            double increment;
+
+            Scanner input = new Scanner(System.in);
+            System.out.println("Enter a score:");
+            score = input.nextDouble();
+            System.out.println("Enter a pay:");
+            pay = input.nextDouble();
+
+            if (score > 90) {
+                increment = pay * 0.03;
+                System.out.println(increment + pay);
+            } else {
+                increment = pay * 0.01;
+                System.out.println(increment + pay);
+            }
+
+          */
     }
+}
