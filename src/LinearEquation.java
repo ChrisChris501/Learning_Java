@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-import java.util.Random;
 
 public class LinearEquation {
     public static void main(String[] args) {
@@ -643,15 +642,12 @@ public class LinearEquation {
         else
             System.out.println("F");
 
-        */
-
-
 
                 // Write an if statement that increases pay by
                 // 3% if score is greater than 90,
                 // other-wise increases pay by 1%.
 
-         /*   double pay;
+            double pay;
             double score;
             double increment;
 
@@ -669,6 +665,137 @@ public class LinearEquation {
                 System.out.println(increment + pay);
             }
 
-          */
+        int x = 5;
+        int y = 2;
+        int z;
+
+       if (x > 2) {
+            if (y > 2) {
+                z = x + y;
+                System.out.println("z is " + z);
+            }
+        } else
+        System.out.println("x is " + x);
+
+
+        int month;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a integer number between 1 to 12:");
+        month = input.nextInt();
+
+        switch (month) {
+            case 1:  System.out.println("January");
+                break;
+            case 2:  System.out.println("February");
+                break;
+            case 3:  System.out.println("March");
+                break;
+            case 4:  System.out.println("April");
+                break;
+            case 5:  System.out.println("May");
+                break;
+            case 6:  System.out.println("June");
+                break;
+            case 7:  System.out.println("July");
+                break;
+            case 8:  System.out.println("August");
+                break;
+            case 9:  System.out.println("September");
+                break;
+            case 10:  System.out.println("October");
+                break;
+            case 11:  System.out.println("November");
+                break;
+            case 12:  System.out.println("December");
+                break;
+        }
+
+        */
+
+
+        int firstNumber;
+        int secondNumber;
+        int thirdNumber;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter any integer number");
+        firstNumber = input.nextInt();
+        System.out.println("Enter any integer number");
+        secondNumber = input.nextInt();
+        System.out.println("Enter any integer number");
+        thirdNumber = input.nextInt();
+
+        if (firstNumber <= secondNumber && firstNumber <= thirdNumber){
+            if(secondNumber <= thirdNumber) {
+                System.out.println(firstNumber + secondNumber + " " + thirdNumber);
+            } else {
+                System.out.println(firstNumber + " " + thirdNumber + " " + secondNumber);
+            }
+
+        } else if (secondNumber <= firstNumber && secondNumber <= thirdNumber) {
+            if(firstNumber <= thirdNumber){
+                System.out.println(secondNumber + " " + firstNumber + " " + thirdNumber);
+            } else {
+                System.out.println( secondNumber+ " " + thirdNumber + " " + firstNumber);
+            }
+
+        } else if(thirdNumber <= firstNumber && thirdNumber <= secondNumber){
+            if(firstNumber <= secondNumber){
+                System.out.println(thirdNumber + " " + firstNumber + " " + secondNumber);
+            } else {
+                System.out.println(thirdNumber + " " + secondNumber + " " + firstNumber);
+            }
+            }  else {
+            System.out.println("Not a valid input");
+        }
+
+            }
+
+ /*       int d1;
+        int d2;
+        int d3;
+        int d4;
+        int d5;
+        int d6;
+        int d7;
+        int d8;
+        int d9;
+        int d10;
+        char lastDigit;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter all 9 digits one after the other: ");
+        d1 = input.nextInt();
+        d2 = input.nextInt();
+        d3 = input.nextInt();
+        d4 = input.nextInt();
+        d5 = input.nextInt();
+        d6 = input.nextInt();
+        d7 = input.nextInt();
+        d8 = input.nextInt();
+        d9 = input.nextInt();
+
+        d10 = (d1 + (d2 * 2) + (d3 * 3) + (d4 * 4) + (d5 * 5) + (d6 * 6) +
+                (d7 * 7) + (d8 * 8) + (d9 * 9)) % 11;
+
+        if (d10 % 100 == 10) {
+            lastDigit = 'X';
+            System.out.println("Your ISBN-10 number is " + d1 + d2 + d3 + d4 +
+                    d5 + d6 + d7 + d8 + d9 + lastDigit);
+        } else {
+            System.out.println("Your ISBN-10 number is " + d1 + d2 + d3 + d4 +
+                    d5 + d6 + d7 + d8 + d9 + d10);
+        }
+
+  */
+
     }
-}
+
+
+
+
+
+
+
+
+
