@@ -784,8 +784,23 @@ public class LinearEquation {
         }
 
   */
+        System.out.println( Math.sqrt(4));
+        System.out.println( Math.sin(2 * Math.PI));
+        System.out.println( Math.pow(2, 2));
+        System.out.println( Math.log(Math.E));
+        System.out.println( Math.rint(2.5)); //rounds to the nearest even no
+        System.out.println( Math.round(2.8));
+       double toRad = ( Math.toRadians(47));
+        System.out.println(toRad);
+        double toDeg = ( Math.toDegrees( Math.PI / 7));
+        System.out.println(toDeg);
 
-
+        int ranNum = 34 + (int)(Math.random() * 22);
+        System.out.println(ranNum);
+        int ranNu = (int)(Math.random() * 1000);
+        System.out.println(ranNu);
+        double ranNumb = 5.5 + (Math.random() * 50);
+        System.out.println(ranNumb);
     }
 
     }
