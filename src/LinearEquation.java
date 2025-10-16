@@ -710,8 +710,6 @@ public class LinearEquation {
                 break;
         }
 
-        */
-
 
         int firstNumber;
         int secondNumber;
@@ -749,9 +747,7 @@ public class LinearEquation {
             System.out.println("Not a valid input");
         }
 
-            }
-
- /*       int d1;
+        int d1;
         int d2;
         int d3;
         int d4;
@@ -788,6 +784,9 @@ public class LinearEquation {
         }
 
   */
+
+
+    }
 
     }
 
