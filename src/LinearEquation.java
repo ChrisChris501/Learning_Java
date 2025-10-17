@@ -783,7 +783,7 @@ public class LinearEquation {
                     d5 + d6 + d7 + d8 + d9 + d10);
         }
 
-  */
+
         System.out.println( Math.sqrt(4));
         System.out.println( Math.sin(2 * Math.PI));
         System.out.println( Math.pow(2, 2));
@@ -801,7 +801,58 @@ public class LinearEquation {
         System.out.println(ranNu);
         double ranNumb = 5.5 + (Math.random() * 50);
         System.out.println(ranNumb);
+
+        //Characters
+        char ch = 67;
+        System.out.println(ch);
+
+        System.out.println("Hello\nWorld");   // new line
+        System.out.println("A\tB");           // tab space
+        System.out.println("He said \"Hi!\"");// double quote
+        System.out.println("This is a backslash: \\");
+
+        */
+        int I = '1';
+        System.out.println(I);
+        int A = 'A';
+        System.out.println(A);
+        int B = 'B';
+        System.out.println(B);
+        int a = 'a';
+        System.out.println(a);
+        char num = 40;
+        System.out.println(num);
+        char num2 = 59;
+        System.out.println(num2);
+        char num3 = 79;
+        System.out.println(num3);
+        char num4 = 85;
+        System.out.println(num4);
+        char num5 = 90;
+        System.out.println(num5);
+        char num6 = 0x71;
+        System.out.println(num6);
+        char num7 = 0x72;
+        System.out.println(num7);
+        char num8 = 0x40;
+        System.out.println(num8);
+        char num9 = 0x5A;
+        System.out.println(num9);
+        char num10 = 0x7A;
+        System.out.println(num10);
+
+        char x = 'a';
+        char y = 'c';
+        System.out.println(++x);
+        System.out.println(y++);
+        System.out.println(x - y);
+
+        int lowerCase = 97 + (int)(Math.random() * 26);
+        System.out.println((char)lowerCase);
+
+        System.out.println('a' <= 'A');
     }
+
 
     }
 
