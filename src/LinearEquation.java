@@ -811,7 +811,6 @@ public class LinearEquation {
         System.out.println("He said \"Hi!\"");// double quote
         System.out.println("This is a backslash: \\");
 
-        */
         int I = '1';
         System.out.println(I);
         int A = 'A';
@@ -850,7 +849,33 @@ public class LinearEquation {
         int lowerCase = 97 + (int)(Math.random() * 26);
         System.out.println((char)lowerCase);
 
-        System.out.println('a' <= 'A');
+        // To safely return only one character
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        String s = input.next();
+        char ch = s.charAt(0);
+        System.out.println("The character entered is " + ch);
+
+        */
+
+        String s1 = "Welcome";
+        String s2 = "welcome";
+        boolean isEqual = s1.equals(s2);
+            System.out.println(isEqual);
+        boolean isEquals = s1.equalsIgnoreCase(s2);
+        System.out.println(isEquals);
+        int x = s1.compareTo(s2);
+        System.out.println(x);
+        int x2 = s1.compareToIgnoreCase(s2);
+        System.out.println(x2);
+        boolean b = s1.startsWith("AAA");
+        System.out.println(b);
+        boolean b2 = s1.endsWith("AAA");
+        System.out.println(b2);
+        int x3 = s1.length();
+        System.out.println(x3);
+        String s3 = s1 + s2;
+        System.out.println(s3);
     }
 
 
