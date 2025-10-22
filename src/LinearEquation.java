@@ -856,8 +856,6 @@ public class LinearEquation {
         char ch = s.charAt(0);
         System.out.println("The character entered is " + ch);
 
-        */
-
         String s1 = "Welcome";
         String s2 = "welcome";
         boolean isEqual = s1.equals(s2);
@@ -876,8 +874,11 @@ public class LinearEquation {
         System.out.println(x3);
         String s3 = s1 + s2;
         System.out.println(s3);
-    }
 
+        */
+
+
+    }
 
     }
 
