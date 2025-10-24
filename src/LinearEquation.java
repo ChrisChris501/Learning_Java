@@ -874,8 +874,39 @@ public class LinearEquation {
         System.out.println(x3);
         String s3 = s1 + s2;
         System.out.println(s3);
+        String s4 = s1.toLowerCase();
+        System.out.println(s4);
+        String s5 = s1.toUpperCase();
+        System.out.println(s5);
+        String s6 = ("\t s1 \t").trim();
+        System.out.println(s6);
 
         */
+
+        // Converting HexDigits to Decimal
+        int dec;
+        String hex;
+        char hexNum;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a hexadecimal unit: ");
+        hex = input.next();
+        hex = hex.toUpperCase();
+        hexNum = hex.charAt(0);
+
+        if(hex.length() != 1) {
+            System.out.print("Pls enter an hexadecimal number");
+            return;
+        }
+
+        if (hexNum >= '0' && hexNum <= '9') {
+            dec =  hexNum - '0';
+            System.out.print("The decimal value for your input is " + dec);
+        } else if (hexNum >= 'A' && hexNum <= 'F') {
+             dec = hexNum - 'A' + 10;
+            System.out.print("The decimal digit is " + dec);
+        } else {
+            System.out.print("There is an error with your input");
+        }
 
 
     }
