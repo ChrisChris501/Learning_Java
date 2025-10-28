@@ -881,12 +881,11 @@ public class LinearEquation {
         String s6 = ("\t s1 \t").trim();
         System.out.println(s6);
 
-        */
-
         // Converting HexDigits to Decimal
         int dec;
-        String hex;
         char hexNum;
+        String hex;
+
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a hexadecimal unit: ");
         hex = input.next();
@@ -908,9 +907,21 @@ public class LinearEquation {
             System.out.print("There is an error with your input");
         }
 
+        */
+
+        //Format Specifier
+        System.out.printf("%5d %d %d\n", 1, 2, 3);
+        System.out.printf("amount is %f %e\n", 32.32, 32.32);
+        System.out.printf("%6b\n", (1 > 2));
+        System.out.printf("%6s\n", "Java");
+        System.out.printf("%6b%-8s\n", (1 > 2), "Java");
+
+        //Displaying tables
+        System.out.printf("%-10s %-10s %-10s %-10s %-10s\n", "Degrees", "Radians", "Sine", "Cosine", "Tangent" );
+        System.out.printf("%-10d %-10f %-10f %-10f %-10f\n", 30, 0.5236, 0.5000, 0.8660, 0.5773 );
+        System.out.printf("%-10d %-10f %-10f %-10f %-10f\n", 60, 1.0472, 0.8660, 0.5000, 1.7320);
 
     }
-
     }
 
 
