@@ -907,8 +907,6 @@ public class LinearEquation {
             System.out.print("There is an error with your input");
         }
 
-        */
-
         //Format Specifier
         System.out.printf("%5d %d %d\n", 1, 2, 3);
         System.out.printf("amount is %f %e\n", 32.32, 32.32);
@@ -922,7 +920,86 @@ public class LinearEquation {
         System.out.printf("%-10d %-10f %-10f %-10f %-10f\n", 60, 1.0472, 0.8660, 0.5000, 1.7320);
 
         //Loop
-        
+        int count = 0;
+        while (count < 10) {
+            System.out.println("Count is lesser than 10");
+            count++;
+        }
+
+        int number1 = (int)(Math.random() * 10);
+        int number2 = (int)(Math.random() * 10);
+        int answer;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("What is the addition of " + number1 + " + " + number2);
+        answer = input.nextInt();
+
+        while (number1 + number2 != answer) {
+            System.out.println("Your answer is not correct. What is " + number1 + " + " + number2);
+            answer = input.nextInt();
+        }
+        System.out.println("you are correct!");
+
+        int randomNumber;
+        int guessNumber = -1;
+
+        randomNumber = (int)(Math.random() * 101);
+
+        Scanner input = new Scanner(System.in);
+        while (guessNumber != randomNumber) {
+            System.out.print("\nEnter your guess between 0 and 100: ");
+            guessNumber = input.nextInt();
+
+            if (guessNumber == randomNumber) {
+                System.out.println("Your are right. The number is " + randomNumber);
+            } else if (guessNumber < randomNumber) {
+                System.out.println("Your guess is to low");
+            } else {
+                System.out.println("Your guess is too high");
+            }
+        }
+
+        int count = 0;
+        while (count < 100) {
+// Point A
+            System.out.println("Welcome to Java!");
+            count++;
+// Point B
+        }
+// Point C
+
+
+            Scanner input = new Scanner(System.in);
+            int number, max;
+            number = input.nextInt();
+            max = number;
+            while (number != 0) {
+                number = input.nextInt();
+                if (number > max)
+                    max = number;
+            }
+            System.out.println("max is " + max);
+            System.out.println("number " + number);
+
+        Scanner input = new Scanner(System.in);
+        int sum = 0;
+        System.out.println("Enter an integer " +
+                "(the input ends if it is 0)");
+        int number = input.nextInt();
+        do {
+            sum += number;
+            System.out.println("Enter an integer " +
+                    "(the input ends if it is 0)");
+            number = input.nextInt();
+        } while (number != 0);
+
+        */
+
+        int value;
+        for (value = 1; value < 100; value++) {
+            System.out.println("Welcome to Java");
+        }
     }
     }
 
