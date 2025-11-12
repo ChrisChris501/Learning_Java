@@ -994,11 +994,50 @@ public class LinearEquation {
             number = input.nextInt();
         } while (number != 0);
 
-        */
-
         int value;
         for (value = 1; value < 100; value++) {
             System.out.println("Welcome to Java");
+        }
+
+        for (i = 0; i <= 1000; i++)
+            sum = sum + i;
+
+        long sum = 0;
+        int i = 1;
+        while (i < 1000) {
+            sum = sum + i;
+            i++;
+            System.out.println(i);
+        }
+
+        long sum = 0;
+        int i = 1;
+        do {
+            sum = sum + i;
+            i++;
+            System.out.println(i);
+        } while (i < 1000);
+
+        */
+
+        int j;
+        int i;
+        int k;
+        System.out.println(" ");
+
+        System.out.println("                Multiplication Table ");
+
+        for (j = 1; j <= 11; j++){
+            System.out.printf("%5d", j );
+        }
+        System.out.println("\n------------------------------------------------------------");
+
+        for (i = 1; i<= 11; i++) {
+            System.out.print(i + " |");
+            for (k = 1; k <= 11; k++) {
+                System.out.printf("%5d", i * k);
+            }
+            System.out.println();
         }
     }
     }
