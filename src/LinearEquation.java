@@ -1018,7 +1018,7 @@ public class LinearEquation {
             System.out.println(i);
         } while (i < 1000);
 
-        */
+        //Nested loop
 
         int j;
         int i;
@@ -1039,6 +1039,12 @@ public class LinearEquation {
             }
             System.out.println();
         }
+
+        */
+
+        //Case Study
+
+
     }
     }
 
