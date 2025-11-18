@@ -1041,12 +1041,34 @@ public class LinearEquation {
         }
 
         */
+        // Methods
+        //Exercises to writing Methods.
+        int sum;
+        int integer = 0;
+        for(sum = 1; sum <= 10; sum ++){
+            integer += sum;
+            System.out.println(integer);
+            }
 
-        //Case Study
+        int num;
+        int add = 0;
+        for(num = 20; num <= 37; num++){
+            add += num;
+            System.out.println(add);
+        }
 
+        int no;
+        int action = 0;
+        for(no = 35; no <= 49; no++) {
+            action += no;
+            System.out.println(action);
+        }
 
+        //Can be written as
+
+        }
     }
-    }
+
 
 
 
