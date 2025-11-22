@@ -1,9 +1,7 @@
-
-import java.util.Scanner;
-
-public class LinearEquation {
+public class IntroToJava {
     public static void main(String[] args) {
-       /*
+       //Simple Java Programs
+        /*
        double a = 3.4;
         double b = 50.2;
         double c = 2.1;
