@@ -24,10 +24,10 @@ public class IntroToJava {
 
         int x = 2;
         int y = 1;
-        int a = 3;
-        int b = 2;
-        int c = 1;
-        int m = 3 + 4*(x) / 5 - 10*(y - 5) * (a + b + c) / x + 9 * (4/x + 9 + x / y);
+        int a_ = 3;
+        int b_ = 2;
+        int c_ = 1;
+        int m = 3 + 4*(x) / 5 - 10*(y - 5) * (a_ + b_ + c_) / x + 9 * (4/x + 9 + x / y);
         int r;
         System.out.println (m);
 

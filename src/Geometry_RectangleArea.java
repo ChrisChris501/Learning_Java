@@ -1,2 +1,2 @@
-public class javaLessons {
+public class Geometry_RectangleArea {
 }

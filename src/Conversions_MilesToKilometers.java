@@ -1,4 +1,2 @@
-package PACKAGE_NAME;
-
-public class Conversions {
+public class Conversions_MilesToKilometers {
 }
