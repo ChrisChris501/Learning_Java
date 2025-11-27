@@ -1,6 +1,6 @@
 public class IntroToJava {
     public static void main(String[] args) {
-       //Simple Java Programs
+
         /*
        double a = 3.4;
         double b = 50.2;
@@ -68,27 +68,7 @@ public class IntroToJava {
         g = 5.5 * Math.pow(r + 2.5, 2.5 + t);
         System.out.print("g is equals " + g);
 
-        //Current time display
-        long totalMilliseconds = System.currentTimeMillis();
-        System.out.println("totalMilli is " + totalMilliseconds);
 
-        long totalSeconds = totalMilliseconds / 1000;
-        System.out.println("totalSec is " + totalSeconds);
-
-        long currentSeconds = totalSeconds % 60 ;
-        System.out.println("currentSecs is " + currentSeconds);
-
-        long totalMinutes = totalSeconds / 60;
-         System.out.println("totalMin is " + totalMinutes);
-
-        long currentMinutes = totalMinutes % 60;
-        System.out.println("currentMin " + currentMinutes);
-
-        long totalHours = totalMinutes / 60;
-        System.out.println("totalMins is " + totalMinutes);
-
-        long currentHour = totalHours % 24 ;
-        System.out.println("Current time is " + currentHour + "hour " + currentMinutes + "mins " + currentSeconds + "secs " + "GMT");
         int i = 10;
         int newNum = 10 * i++;
         System.out.print("i is " + i
