@@ -10,17 +10,15 @@ public class IntroToJava {
         double f = 5.9;
         double x;
         double y;
-
         x = (e * d - b * f)/(a * d - b * c);
         y = (a * f - e * c) / (a * d - b * c);
         System.out.println("x is equals " + x + " and y is equals " + y);
+
         double miles = 100;
         final double KILOMETERS_PER_MILE = 1.609;
         double kilometers = miles * KILOMETERS_PER_MILE;
         System.out.println(kilometers);
         System.out.println (Math.pow(2, 3.5));
-
-
 
         int x = 2;
         int y = 1;
@@ -33,18 +31,7 @@ public class IntroToJava {
 
 
 
-        double width = 0;
-        double height = 0;
-        double area = 0;
-        Scanner equation = new Scanner(System.in);
-        System.out.print("Enter the width: ");
-        width = equation.nextDouble();
-        System.out.print("Enter the height: ");
-        height = equation.nextDouble();
 
-        area = width * height;
-        System.out.println("The area is: " + area + "cm^2");
-        equation.close();
 
         double Fahrenheit = 0;
         double Celsius = 0;
