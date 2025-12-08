@@ -33,15 +33,7 @@ public class IntroToJava {
 
 
 
-        double Fahrenheit = 0;
-        double Celsius = 0;
-        Scanner userInput =  new Scanner (System.in);
 
-        System.out.print("enter a degree Fahrenheit: ");
-        Fahrenheit = userInput.nextDouble();
-
-        celsius = (5.0 / 9) * (fahrenheit - 32);
-        System.out.print("Fahrenheit " + Fahrenheit + " is " + Celsius + " in Celsius");
 
         double a = 2;
         double b = 2;
