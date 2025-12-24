@@ -103,52 +103,11 @@ public class IntroToJava {
         speed = distance / time;
         System.out.println("Average speed = " + speed);
 
+// 3.
 
-//2. Maria Jogging Around the Park
-        double singleLap = 1.2;
-        double mariaTime = 35;
-        double completedLaps = 5;
-        double totalLap;
-        double mariaSpeed;
 
-        totalLap = singleLap * completedLaps;
-        mariaTime = mariaTime / 60;
-        mariaSpeed = totalLap / mariaTime;
-        System.out.println(mariaSpeed);
 
-// 3. The Train Ride
-        double trainDistance = 290;
-        double leavesBerlin;
-        double arrivesHamburg;
-        double totalTravelTime;
-        double trainSpeed;
-
-        //Convert hours to minutes
-        arrivesHamburg = (4 * 60) + 30;
-        leavesBerlin = 2 * 60;
-        totalTravelTime = arrivesHamburg - leavesBerlin;
-        trainSpeed = trainDistance / totalTravelTime;
-        System.out.println(trainSpeed);
-
-        //Temperature
-//4. Hot Coffee
-        double pouredCoffeeTemp = 85;
-        double recommendedTemp = 140;
-
-        //Convert coffee temp from degree Celsius to Fahrenheit
-        pouredCoffeeTemp = (pouredCoffeeTemp * 9/5) + 32;
-        System.out.println("Converted coffee Temp is " + pouredCoffeeTemp + "degree Fahrenheit");
-        //Check if Coffee Temp is hotter than the recommended recipe
-        if (pouredCoffeeTemp > recommendedTemp) {
-            System.out.println("Coffee is hotter than the recommended temperature");
-        } else {
-            System.out.println("Coffee is the recommended temp");
-        }
-
-//5. Cold Winter Day
-        double munichWeather = -4;
-        double munichWeatherToFahrenheit = (munichWeather * 9 / 5) + 32;
-        System.out.println(munichWeatherToFahrenheit);
+//5.
 
 //6. Space science
         double neptuneTemp = -353;

@@ -30,5 +30,21 @@ public class Speed_runnerSpeed {
         mariaSpeed = totalLap / mariaTime;
         System.out.println(mariaSpeed);
 
+
+
+       // The Train Ride
+        double trainDistance = 290;
+        double leavesBerlin;
+        double arrivesHamburg;
+        double totalTravelTime;
+        double trainSpeed;
+
+        //Convert hours to minutes
+        arrivesHamburg = (4 * 60) + 30;
+        leavesBerlin = 2 * 60;
+        totalTravelTime = arrivesHamburg - leavesBerlin;
+        trainSpeed = trainDistance / totalTravelTime;
+        System.out.println(trainSpeed);
+
     }
 }
