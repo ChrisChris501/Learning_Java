@@ -25,11 +25,6 @@ public class IntroToJava {
         System.out.println (m);
 
 
-
-
-
-
-
         double a = 2;
         double b = 2;
         double c = 1;
@@ -53,103 +48,16 @@ public class IntroToJava {
         System.out.println("i is " + i);
 
 
-        double amount = 5;
-        System.out.println(amount / 2);
-        System.out.println(5 / 2);
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter the annual interest rate (percentage): ");
-        double annualInterestRate = input.nextDouble();
-
-        double monthlyInterest = annualInterestRate/1200;
-
-        System.out.print("Enter the number of years to pay laon: ");
-        double numberOfYears = input.nextDouble();
-
-        System.out.print("Enter loan amount: ");
-        double loanAmount = input.nextDouble();
-
-
-        double monthlyPayment = loanAmount * monthlyInterest / (1 - 1 / Math.pow (1 + monthlyInterest, numberOfYears * 12)) ;
-        double totalPayment = monthlyPayment * numberOfYears * 12;
-
-        System.out.println("monthly payment is equals: #" + (int)(monthlyPayment * 100)/100.0);
-        System.out.println("Total payment is equals: #" + (int)(totalPayment * 100)/100.0);
 
         double r = (-b + Math.sqrt (Math.pow(b, 2) - 4 * a * c)) / 2 * a;
-
-
-        (Average speed in miles) Assume a runner runs 14 kilometers in 45 minutes and 30
-        seconds. Write a program that displays the average speed in miles per hour. (Note
-                                                                                             that 1 mile is 1.6 kilometers.)
-
-                -> speed = distance / time; // Formula
-        "Speed of athlete is (speed) miles/hr"; // Output
-
-        double distance;
-        double time;
-        double speed;
-        double speedInMiles = 24;
-
-        //Time to hours
-        time = ((60 * 60) + (40.0 * 60) + 35) / 3600;
-        System.out.println(time);
-
-        //Speed to kilometers
-         distance = speedInMiles * 1.6;
-
-        // Calculating speed
-
-        speed = distance / time;
-        System.out.println("Average speed = " + speed);
-
-// 3.
-
-
-
-//5.
 
 //6. Space science
         double neptuneTemp = -353;
         double neptuneTempToFahrenheit = (neptuneTemp * 9 / 5) + 32;
         System.out.println(neptuneTempToFahrenheit);
-//Currency
-// 7. Holiday in Spain
-        double amountInDollars = 500;
-        double oneDollarsToEuros = 0.91;
-        double convertToEuros = amountInDollars * oneDollarsToEuros;
-        System.out.println(convertToEuros);
 
-//8. Buying a Phone Online
-        double phoneCostInEuros = 850;
-        double oneEurosToDollars = 1.07;
-        double phoneCostInDollars = phoneCostInEuros * oneEurosToDollars;
-        System.out.println(phoneCostInDollars);
 
-// 9. Pocket Money
-        double liamPocketMoneyInPounds = 20;
-        double onePoundToYen = 165;
-        double pocketMoneyInYen = liamPocketMoneyInPounds * onePoundToYen;
-        System.out.println(pocketMoneyInYen);
-
-//     Geometry  / Area
-// 10. Painting a Wall
-        double wallWide = 4.2;
-        double wallTall = 2.8;
-        double wallArea = wallWide * wallTall;
-        System.out.println(wallArea);
-
-// 11. Garden Circle
-        double gardenRadius = 3.5;
-        double pi = 3.14159;
-        double gardenArea = pi * gardenRadius * gardenRadius;
-        System.out.println(gardenArea);
-
-// 12. Paper Triangle
-        double  triangleBase = 12;
-        double triangleHeight = 8;
-        double areaOfTriangle = (triangleBase * triangleHeight) / 2;
-        System.out.println(areaOfTriangle);
 
 // Miscellaneous
 // 13.  Healthy Living
