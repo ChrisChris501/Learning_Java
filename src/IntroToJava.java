@@ -103,8 +103,6 @@ public class IntroToJava {
         speed = distance / time;
         System.out.println("Average speed = " + speed);
 
-//1.
-
 
 //2. Maria Jogging Around the Park
         double singleLap = 1.2;

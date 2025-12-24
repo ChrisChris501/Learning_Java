@@ -16,5 +16,19 @@ public class Speed_runnerSpeed {
         //Average speed
         amirSpeed = schoolDistance /amirTime;
         System.out.println(amirSpeed);
+
+
+       // Maria Speed Jogging Around the Park
+        double singleLap = 1.2;
+        double mariaTime = 35;
+        double completedLaps = 5;
+        double totalLap;
+        double mariaSpeed;
+
+        totalLap = singleLap * completedLaps;
+        mariaTime = mariaTime / 60;
+        mariaSpeed = totalLap / mariaTime;
+        System.out.println(mariaSpeed);
+
     }
 }
