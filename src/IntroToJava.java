@@ -103,21 +103,7 @@ public class IntroToJava {
         speed = distance / time;
         System.out.println("Average speed = " + speed);
 
-//1. Amir Late for School
-        double startTime;
-        double endTime;
-        double schoolDistance = 18;
-        double amirTime;
-        double amirSpeed;
-
-        //Convert startTime and endTime to minutes
-        startTime = (7 * 60) + 45;
-        endTime = (7 * 60) + 15;
-        //Convert to hours
-        amirTime =(startTime - endTime) /  60;
-        //Average speed
-        amirSpeed = schoolDistance /amirTime;
-        System.out.println(amirSpeed);
+//1.
 
 
 //2. Maria Jogging Around the Park
