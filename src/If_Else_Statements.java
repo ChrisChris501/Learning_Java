@@ -106,6 +106,31 @@ public class If_Else_Statements {
         // Display the result
         System.out.println(year + " is a leap year? " + isLeapYear);
 
+        // Converting HexDigits to Decimal
+        int dec;
+        char hexNum;
+        String hex;
+
+        System.out.print("Enter a hexadecimal unit: ");
+        hex = input.next();
+        hex = hex.toUpperCase();
+        hexNum = hex.charAt(0);
+
+        if(hex.length() != 1) {
+            System.out.print("Pls enter an hexadecimal number");
+            return;
+        }
+
+        if (hexNum >= '0' && hexNum <= '9') {
+            dec =  hexNum - '0';
+            System.out.print("The decimal value for your input is " + dec);
+        } else if (hexNum >= 'A' && hexNum <= 'F') {
+            dec = hexNum - 'A' + 10;
+            System.out.print("The decimal digit is " + dec);
+        } else {
+            System.out.print("There is an error with your input");
+        }
+
 
         input.close();
     }

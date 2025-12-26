@@ -63,7 +63,7 @@ public class IntroToJava {
         double alexHeight = 1.70;
         double alexBMI = alexWeightInKilogram / (alexHeight * alexHeight);
         System.out.println(alexBMI);
-
+ky
 // 14.    Fuel for the Trip
          double fuelConsumed = 6.5;
          double fuelPerKM = fuelConsumed / 100;
@@ -92,19 +92,6 @@ public class IntroToJava {
 
     //
 
-        double cylinderRadius;
-        double cylinderLength;
-        double cylinderVolume;
-        double cylinderArea;
-        final double PI = 3.1415;
-        Scanner input = new Scanner(System.in);
-        System.out.print("enter the cylinderRadius: ");
-        cylinderRadius = input.nextDouble();
-        System.out.print("enter the cylinderLength: ");
-        cylinderLength = input.nextDouble();
-        cylinderArea = cylinderRadius * cylinderRadius * PI;
-        cylinderVolume = cylinderArea * cylinderLength;
-        System.out.println("Cylinder Area =" + cylinderArea + " and Cylinder Volume =" + cylinderVolume);
 
 
         //java.util.Random
@@ -117,72 +104,6 @@ public class IntroToJava {
         int sumOfRandomNumberDigits = extractionOfHundreds + extractionOfTens + extractionOfOnes;
         System.out.println("The sum of the digits in the random number is: " + sumOfRandomNumberDigits);
 
-
-
-
-
-
-
-        Scanner newInput = new Scanner(System.in);
-        System.out.print("Enter a year: ");
-        int year = newInput.nextInt();
-        //Using switch statement
-        switch (year % 12) {
-            case 0: System.out.println("monkey");
-                break;
-            case 1: System.out.println("rooster");
-                break;
-            case 2: System.out.println("dog");
-                break;
-            case 3: System.out.println("pig");
-                break;
-            case 4: System.out.println("rat");
-                break;
-            case 5: System.out.println("ox");
-                break;
-            case 6: System.out.println("tiger");
-                break;
-            case 7: System.out.println("rabbit");
-                break;
-            case 8: System.out.println("dragon");
-                break;
-            case 9: System.out.println("snake");
-                break;
-            case 10: System.out.println("horse");
-                break;
-            case 11: System.out.println("sheep");
-                break;
-        }
-
-        int x = 1;
-        int a = 7;
-        switch (a){
-            case 1: x += 5;
-            break;
-            case 2: x += 10;
-            break;
-            case 3: x += 16;
-            break;
-            case 4: x += 34;
-        }
-        System.out.println("x = " + x);
-
-        int days = 2;
-        switch (days) {
-            case 0: System.out.println("Sunday");
-                break;
-            case 1: System.out.println("Monday");
-            break;
-            case 2: System.out.println("Tuesday");
-            break;
-            case 3: System.out.println("Wednesday");
-                break;
-            case 4: System.out.println("Thursday");
-                break;
-            case 5: System.out.println("Friday");
-            break;
-            case 6: System.out.println("Saturday");
-                break;
 
         java.util.Scanner input = new java.util.Scanner(System.in);
         double x = input.nextDouble();
@@ -384,39 +305,6 @@ public class IntroToJava {
         System.out.println("x is " + x);
 
 
-        int month;
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter a integer number between 1 to 12:");
-        month = input.nextInt();
-
-        switch (month) {
-            case 1:  System.out.println("January");
-                break;
-            case 2:  System.out.println("February");
-                break;
-            case 3:  System.out.println("March");
-                break;
-            case 4:  System.out.println("April");
-                break;
-            case 5:  System.out.println("May");
-                break;
-            case 6:  System.out.println("June");
-                break;
-            case 7:  System.out.println("July");
-                break;
-            case 8:  System.out.println("August");
-                break;
-            case 9:  System.out.println("September");
-                break;
-            case 10:  System.out.println("October");
-                break;
-            case 11:  System.out.println("November");
-                break;
-            case 12:  System.out.println("December");
-                break;
-        }
-
-
         int firstNumber;
         int secondNumber;
         int thirdNumber;
@@ -587,31 +475,7 @@ public class IntroToJava {
         String s6 = ("\t s1 \t").trim();
         System.out.println(s6);
 
-        // Converting HexDigits to Decimal
-        int dec;
-        char hexNum;
-        String hex;
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a hexadecimal unit: ");
-        hex = input.next();
-        hex = hex.toUpperCase();
-        hexNum = hex.charAt(0);
-
-        if(hex.length() != 1) {
-            System.out.print("Pls enter an hexadecimal number");
-            return;
-        }
-
-        if (hexNum >= '0' && hexNum <= '9') {
-            dec =  hexNum - '0';
-            System.out.print("The decimal value for your input is " + dec);
-        } else if (hexNum >= 'A' && hexNum <= 'F') {
-             dec = hexNum - 'A' + 10;
-            System.out.print("The decimal digit is " + dec);
-        } else {
-            System.out.print("There is an error with your input");
-        }
 
         //Format Specifier
         System.out.printf("%5d %d %d\n", 1, 2, 3);
