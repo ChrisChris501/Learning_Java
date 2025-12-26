@@ -83,6 +83,30 @@ public class If_Else_Statements {
             System.out.println("false");
         }
 
+        //Weight calculation
+        double weight;
+        double height;
+        System.out.print("What is your weight? ");
+        weight = input.nextDouble();
+        System.out.print("What is your height? ");
+        height = input.nextDouble();
+        if (weight > 50 ^ height > 60)
+        {
+            System.out.println("true");
+        } else
+        {
+            System.out.println("false");
+        }
+
+
+        System.out.print("Enter a year: ");
+        int year = input.nextInt();
+        // Check if the year is a leap year
+        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+        // Display the result
+        System.out.println(year + " is a leap year? " + isLeapYear);
+
+
         input.close();
     }
 }

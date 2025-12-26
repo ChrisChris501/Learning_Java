@@ -121,28 +121,7 @@ public class IntroToJava {
 
 
 
-        double weight;
-        double height;
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("What is your weight? ");
-        weight = userInput.nextDouble();
-        System.out.print("What is your height? ");
-        height = userInput.nextDouble();
-        if (weight > 50 ^ height > 60)
-        {
-            System.out.println("true");
-        } else
-        {
-            System.out.println("false");
-        }
 
-        Scanner newInput = new Scanner(System.in);
-        System.out.print("Enter a year: ");
-        int year = newInput.nextInt();
-        // Check if the year is a leap year
-        boolean isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-        // Display the result
-        System.out.println(year + " is a leap year? " + isLeapYear);
 
         Scanner newInput = new Scanner(System.in);
         System.out.print("Enter a year: ");
