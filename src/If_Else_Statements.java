@@ -99,6 +99,8 @@ public class If_Else_Statements {
         }
 
 
+        // Checking if a year is a leap year.
+
         System.out.print("Enter a year: ");
         int year = input.nextInt();
         // Check if the year is a leap year
